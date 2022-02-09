@@ -130,7 +130,7 @@ h1 {
         }
     }      
   }
-  /* For larger to medium screens size from 1000px wide and down  */
+  /* For medium screens size from 1000px wide and down  */
   @media screen and (max-width: 1000px){
     h1 {
       font-size: 3em;
@@ -153,7 +153,7 @@ h1 {
       }
     }  
   }
-  /* For larger to medium screens size from 800px wide and down  */
+  /* For  screens size from 800px wide and down  */
   @media screen and (max-width: 800px){
     h1 {
       font-size: 3em;
@@ -176,3 +176,32 @@ h1 {
       }
     }  
 }
+ /* For  screens size from 600px wide and down  */
+@media screen and (max-width: 600px){
+    h1 {
+      font-size: 2em;
+    }
+    .game-info {
+      font-size: 1.5em;
+    }
+    .dot {
+      height: 80px;
+      width: 80px;
+    }
+    #best-time {
+      font-size: 1em;
+    }
+    #best-flips {
+      font-size: 1em;
+    }
+    #game-area {
+      grid-template-columns:repeat(4, 80px);
+      grid-template-rows: 50px 80px 80px 80px 80px 80px;   
+    } 
+    @keyframes overlay-appear {
+      to {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 3em;
+      }
+    }   
+  }
