@@ -35,22 +35,33 @@ h1 {
     90% {color: rgb(170, 134, 66);}
     100% {color: rgb(51, 122, 116);}    
   }
+   /*Game information*/
+  .info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .game-info {
+    color: #774929;
+    font-size: 3em;
+  }
   /*Creating the question mark as rounded dots and cover the coloured dots*/
   .dot {
-      position: relative;
-      height: 150px;
-      width: 150px;
-  }
-  .dot-face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 75px;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;    
-  }
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.dot-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 75px;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;  
+}
+
   /*Arrange dots in grid */
 #game-area {
     display: grid;
@@ -58,4 +69,8 @@ h1 {
     grid-gap: 5px;
     margin: 40px;
     justify-content: center; 
+  }
+  /*This class it will be used to hide the question mark when clicked*/
+  .dot.hide .backside {
+    display: none;
   }
