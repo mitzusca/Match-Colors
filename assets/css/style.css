@@ -107,25 +107,46 @@ h1 {
     }
   }
   @media screen and (max-width:1200px) {
-      h1 {
+    h1 {
           font-size: 3em;
-      }
-      .game-info {
+    }
+    .game-info {
         font-size: 2em;
-      }
-      .dot {
+    }
+    .dot {
         height: 120px;
         width: 120px;
-      }
-      #game-area {
+    }
+    #game-area {
         grid-template-columns:repeat(6, 120px);   
         grid-template-rows: 80px 120px 120px 120px 120px 120px;    
-      }
-      @keyframes overlay-appear {
+    }
+    @keyframes overlay-appear {
         to {
-          background-color: rgba(0, 0, 0, 0.8);
-          font-size: 5em;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 5em;
         }
+    }      
+  }
+  @media screen and (max-width: 1000px){
+    h1 {
+      font-size: 3em;
+    }
+    .game-info {
+      font-size: 2em;
+    }
+    .dot {
+      height: 110px;
+      width: 110px;
+    }
+    #game-area {
+      grid-template-columns:repeat(4, auto);  
+      grid-template-rows: 80px 110px 110px 110px 110px 110px;    
+    }  
+    @keyframes overlay-appear {
+      to {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 4em;
       }
-      
+    }  
   }
