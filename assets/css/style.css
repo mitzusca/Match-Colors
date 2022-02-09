@@ -205,3 +205,50 @@ h1 {
       }
     }   
   }
+/* For  screens size from 400px wide and down  */
+  @media screen and (max-width: 400px){
+    h1 {
+      font-size: 1.5em;
+    }
+    nav a {  
+      font-size: 0.9em;
+    }
+    .dot {
+      height: 65px;
+      width: 65px;
+    }
+    #game-area {
+      grid-template-columns:repeat(4, 67px);
+      grid-template-rows: 30px 65px 65px 65px 65px 65px;   
+    } 
+    .game-info {
+      font-size: 1.2em;
+    }
+  
+    @keyframes overlay-appear {
+      to {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 2em;
+      }
+    }   
+  }
+  /* For  screens size from 300px wide and down  */
+  @media screen and (max-width: 300px){
+    h1 {
+      font-size: 1.5em;
+    }
+    nav a {  
+      font-size: 0.9em;
+    }
+    .dot {
+      height: 50px;
+      width: 50px;
+    }
+    .game-info {
+      font-size: 1em;
+    }
+    #game-area {
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: 30px 60px 60px 60px 60px 60px;
+    }   
+  }
