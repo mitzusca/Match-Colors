@@ -74,3 +74,35 @@ h1 {
   .dot.hide .backside {
     display: none;
   }
+  /*Overlay text style*/
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #346e2f;
+
+  }
+  .overlay-span {
+    font-size: .5em;
+  }
+  .overlay.display {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-appear 1000ms forwards;
+  }
+  @keyframes overlay-appear {
+    from {
+      background-color: rgba(202, 4, 4, 0.555);
+      font-size: 0;
+    }
+    to {
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 7em;
+    }
+  }
