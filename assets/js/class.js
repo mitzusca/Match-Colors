@@ -18,7 +18,7 @@ class MatchColors {
         setTimeout(()=>{
             this.mixDots();
             this.counting = this.startCounter();
-            this.busy = false
+            this.busy = false;
         },500);
         this.hideDots();
         this.timer.innerText = this.timeElapsed;
@@ -41,7 +41,7 @@ class MatchColors {
             if(this.dotToCheck)
                 this.checkForDotMatch(dot);
             else
-                this.dotToCheck = dot
+                this.dotToCheck = dot;
         }
     }
     //Get the the first and second dot type and check them and run the coresponding method, if they are match or not
@@ -100,6 +100,6 @@ class MatchColors {
        
         //Rules that apply in order to see the coloured dot
         //In order to dot to be shown it must not wait to be checked, must not be matched already and this.busy must be false
-        return !this.busy && !this.matchedDots.includes(dot) && dot !== this.dotToCheck
+        return !this.busy && !this.matchedDots.includes(dot) && dot !== this.dotToCheck;
     }
 }
