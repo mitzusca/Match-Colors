@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Lato:wght@300&display=swap');
 @font-face {
-    font-family: "Finger Paint", cursive;
+    font-family: "Finger Paint" ;
     src: url("../font/FingerPaint-Regular.ttf") format("ttf")
   }
   * {
